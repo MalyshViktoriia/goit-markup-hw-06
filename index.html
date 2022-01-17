@@ -51,7 +51,7 @@
             <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                    <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
+                    <button data-modal-open type="button" class="hero-button button">Заказать услугу</button>
                 </div>
             </section>
 
@@ -398,7 +398,7 @@
 
 
         <div class="join-us">
-            <h3 class="join-us-header">присоединяйтесь</h3>
+            <b class="join-us-header">присоединяйтесь</b>
             <ul class="list social-list">
                 <li class="social-item">
                     <a href="" class="footer-social-link social-link" target="_blank" rel="noreferrer noopener">
@@ -439,6 +439,21 @@
             </ul>
 
         </div>
+
+        <div class="subscribe">
+            <b class="subscribe-title">Подпишитесь на рассылку</b>
+            <form class="footer-form" >
+               <div class="footer-form-content">
+                    <input type="email" name="subscribe" placeholder="E-mail" class="footer-input">
+                    <button type="submit" class="button footer-submit-button">
+                        Подписаться
+                        <svg width="24" height="24" class="footer-submit-icon">
+                            <use href="./img/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+               </div>
+            </form>
+        </div>
     </div>
 </footer>
 
@@ -451,30 +466,50 @@
         </svg>
         </button>
 
-        <div class="form">
+     
             
-            <form class="form-items">
-                <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="form">
+                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
                 
-                <label for="name" class="form-item">Имя</label>
-                <input type="text" name="user-name" id="name" class="form-item-type">
+                <div class="form-field">
+                    <label for="name" class="form-lable"><span class="label-text">Имя</span></label>
+                    <input type="text" name="user-name" id="name" class="form-input">
+                    <!-- <svg width="18" height="18">
+                        <use href="./img/icons.svg#person-black"></use>
+                    </svg>  -->
+                </div>
+                
+                <div class="form-field">
+                    <label for="tel" class="form-lable"><span class="label-text">Телефон</span></label>
+                    <input type="tel" name="tel" id="tel" class="form-input">
+                    <!-- <svg width="18" height="18">
+                        <use href="./img/icons.svg#phone-black"></use>
+                    </svg> -->
+                </div>
     
-                <label for="tel" class="form-item">Телефон</label>
-                <input type="tel" name="tel" id="tel" class="form-item-type">
+                <div class="form-field">
+                    <label for="email" class="form-lable"><span class="label-text">Почта</span></label>
+                    <input type="email" name="email" id="email" class="form-input">
+                    <!-- <svg width="18" height="18">
+                        <use href="./img/icons.svg#email-black"></use>
+                    </svg> -->
+                </div>
     
-                <label for="email" class="form-item">Почта</label>
-                <input type="email" name="email" id="email" class="form-item-type">
-    
-                <label for="textarea" class="form-item">Комментарий</label>
-                <textarea name="" id="textarea" cols="30" rows="10" placeholder="Введите текст" class="form-item-type"></textarea>
+                <div class="form-field">
+                    <label for="textarea" class="form-lable"><span class="label-text">Комментарий</span></label>
+                    <textarea name="" id="textarea" placeholder="Введите текст" class="form-input textarea label-text"></textarea>
+                </div>
 
-                <input type="checkbox" name="" value="Соглашаюсь с рассылкой и принимаю Условия договора">
-    
-                <button type="submit">Отправить</button>
+                <div class="privat-policy">
+                    <input type="checkbox" name="policy" class="policy">
+                    <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="" class="privat-policy-link" target="_blank" rel="noreferrer noopener">Условия договора</a></label>
+                </div>
+                <div class="modal-button-send">
+                <button type="submit" class="modal-button-submit button">Отправить</button>
+                </div>
             
             </form>
-        </div>
-
+        
     </div>
 </div>
 
