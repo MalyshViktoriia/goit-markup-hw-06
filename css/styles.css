@@ -517,7 +517,7 @@ img {
 .footer-input {
   margin-top: 20px;
   margin-right: 12px;
-  width: 358px;
+  min-width: 358px;
   height: 50px;
   background-color: #2f303a;
   border: none;
@@ -729,6 +729,11 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.modal-button:hover,
+.modal-button:focus {
+  color: var(--accent-color);
+}
+
 /* ------ MODAL FORMS ------ */
 
 .form {
@@ -757,6 +762,10 @@ img {
   margin-bottom: 4px;
 }
 
+.form-lable:focus {
+  border-color: var(--accent-color);
+}
+
 .label-text {
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -767,23 +776,82 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
+  min-width: 448px;
   margin: 0;
   padding: 0;
+  padding-left: 42px;
+}
+
+.form-field-wrap {
+  position: relative;
+}
+
+.form-input-icon {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  color: var(--primary-text-color);
+}
+/* 
+.form-field:focus-within > .comment {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+} */
+
+.form-input:focus ~ .form-input-icon {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .textarea {
   height: 120px;
   resize: none;
+  padding: 12px 16px;
 }
 
 .textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
-  padding: 12px 16px;
+}
+
+.privat-policy {
+  display: flex;
+  align-items: center;
 }
 
 .policy {
-  margin-right: 10px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
+.policy:checked + .check-box {
+}
+
+.check-box {
+  display: inline-block;
+  margin-right: 10px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+}
+
+.policy:checked + .check-box {
+  background-image: url(../img/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+.policy-checkbox {
+}
+
 .privat-policy {
   margin-top: 20px;
   margin-bottom: 30px;
