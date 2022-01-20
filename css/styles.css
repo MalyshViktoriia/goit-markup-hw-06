@@ -761,6 +761,7 @@ img {
 
 .form-lable {
   margin-bottom: 4px;
+  transition: border-color var(--animation-time) var(--timing-function);
 }
 
 .form-lable:focus {
@@ -785,7 +786,7 @@ img {
 }
 
 .form-input:focus,
-.comment:focus {
+.textarea:focus {
   border-color: var(--accent-color);
   outline: none;
 }
@@ -809,6 +810,7 @@ img {
   height: 120px;
   resize: none;
   padding: 12px 16px;
+  transition: border-color var(--animation-time) var(--timing-function);
 }
 
 .textarea::placeholder {
@@ -840,7 +842,7 @@ img {
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .policy:checked + .check-box {
