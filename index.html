@@ -378,7 +378,7 @@
 
 <footer class="footer">
     <div class="container footer-container">
-        <div class="footer-adress">
+        <div class="footer-cont-item">
             <a class="logo link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
             <address class="address">
                 <ul class="list">
@@ -397,8 +397,8 @@
         </div>
 
 
-        <div class="join-us">
-            <b class="join-us-header">присоединяйтесь</b>
+        <div class="footer-cont-item">
+            <b class="footer-title">присоединяйтесь</b>
             <ul class="list social-list">
                 <li class="social-item">
                     <a href="" class="footer-social-link social-link" target="_blank" rel="noreferrer noopener">
@@ -440,8 +440,8 @@
 
         </div>
 
-        <div class="subscribe">
-            <b class="subscribe-title">Подпишитесь на рассылку</b>
+        <div class="footer-cont-item">
+            <b class="footer-title">Подпишитесь на рассылку</b>
             <form class="footer-form" >
                <div class="footer-form-content"> 
                     <input type="email" name="subscribe" placeholder="E-mail" class="footer-input">
@@ -471,52 +471,49 @@
             <form class="form">
                 <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
                 
-                <div class="form-field">
-                    <label for="name" class="form-lable"><span class="label-text">Имя</span></label>
+                <div class="form-input-wrapper">
+                    <div class="form-field">
+                        <label for="name" class="form-lable"><span class="label-text">Имя</span></label>
+                        <div class="form-field-wrap">
+                            <input type="text" name="user-name" id="name" class="form-input">
+                            <svg width="18" height="18" class="form-input-icon">
+                                <use href="./img/icons.svg#person-black"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="form-field">
+                        <label for="tel" class="form-lable"><span class="label-text">Телефон</span></label>
                     <div class="form-field-wrap">
-                        <input type="text" name="user-name" id="name" class="form-input">
-                        <svg width="18" height="18" class="form-input-icon">
-                            <use href="./img/icons.svg#person-black"></use>
-                        </svg>
+                            <input type="tel" name="tel" id="tel" class="form-input">
+                            <svg width="18" height="18" class="form-input-icon">
+                                <use href="./img/icons.svg#phone-black"></use>
+                            </svg>
+                    </div>
+                    </div>
+        
+                    <div class="form-field">
+                        <label for="email" class="form-lable"><span class="label-text">Почта</span></label>
+                    <div class="form-field-wrap">
+                            <input type="email" name="email" id="email" class="form-input">
+                            <svg width="18" height="18" class="form-input-icon">
+                                <use href="./img/icons.svg#email-black"></use>
+                            </svg>
+                    </div>
+                    </div>
+        
+                    <div class="form-field form-field-textarea">
+                        <label for="comment" class="form-lable" ><span class="label-text">Комментарий</span></label>
+                        <textarea name="comment" id="comment" placeholder="Введите текст" class="form-input textarea"></textarea>
                     </div>
                 </div>
-                
-                <div class="form-field">
-                    <label for="tel" class="form-lable"><span class="label-text">Телефон</span></label>
-                   <div class="form-field-wrap">
-                        <input type="tel" name="tel" id="tel" class="form-input">
-                        <svg width="18" height="18" class="form-input-icon">
-                            <use href="./img/icons.svg#phone-black"></use>
-                        </svg>
-                   </div>
-                </div>
-    
-                <div class="form-field">
-                    <label for="email" class="form-lable"><span class="label-text">Почта</span></label>
-                   <div class="form-field-wrap">
-                        <input type="email" name="email" id="email" class="form-input">
-                        <svg width="18" height="18" class="form-input-icon">
-                            <use href="./img/icons.svg#email-black"></use>
-                        </svg>
-                   </div>
-                </div>
-    
-                <div class="form-field">
-                    <label for="comment" class="form-lable" ><span class="label-text">Комментарий</span></label>
-                    <textarea name="comment" id="comment" placeholder="Введите текст" class="form-input textarea"></textarea>
-                </div>
 
-                <div class="privat-policy">
-                    <label for="policy">
+                    <label for="policy" class="privat-policy">
                     <input type="checkbox" name="policy" class="policy" id="policy" >
                     <span class="check-box"></span>
-                    <!-- <svg width="16" height="15" class="checkbox-icon">
-                        <use href="./img/icons.svg#icon-check"></use>
-                    </svg> -->
-
+                   
                     Соглашаюсь с рассылкой и принимаю <a href="" class="privat-policy-link" target="_blank" rel="noreferrer noopener">Условия договора</a>
                 </label>
-                </div>
 
                 <div class="modal-button-send">
                 <button type="submit" class="modal-button-submit button">Отправить</button>
